@@ -17,11 +17,16 @@ namespace Commercial_Report
     /// <summary>
     /// Interaction logic for MainWindow.xaml
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class MainWindow : Syncfusion.Windows.Shared.ChromelessWindow
     {
         public MainWindow()
         {
             InitializeComponent();
+        }
+
+        private void OnComboBoxSelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            dataGridArea.Content = new DataTablePage();
         }
     }
 }

@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="DataSet1" targetNamespace="http://tempuri.org/DataSet1.xsd" xmlns:mstns="http://tempuri.org/DataSet1.xsd" xmlns="http://tempuri.org/DataSet1.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="DataSet1" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="DataSet1" msprop:Generator_UserDSName="DataSet1">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="CarrierRanking" msprop:Generator_TableClassName="CarrierRankingDataTable" msprop:Generator_TableVarName="tableCarrierRanking" msprop:Generator_TablePropName="CarrierRanking" msprop:Generator_RowDeletingName="CarrierRankingRowDeleting" msprop:Generator_RowChangingName="CarrierRankingRowChanging" msprop:Generator_RowEvHandlerName="CarrierRankingRowChangeEventHandler" msprop:Generator_RowDeletedName="CarrierRankingRowDeleted" msprop:Generator_UserTableName="CarrierRanking" msprop:Generator_RowChangedName="CarrierRankingRowChanged" msprop:Generator_RowEvArgName="CarrierRankingRowChangeEvent" msprop:Generator_RowClassName="CarrierRankingRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Rank" msprop:Generator_ColumnVarNameInTable="columnRank" msprop:Generator_ColumnPropNameInRow="Rank" msprop:Generator_ColumnPropNameInTable="RankColumn" msprop:Generator_UserColumnName="Rank" type="xs:long" minOccurs="0" />
+              <xs:element name="ShippingLine" msprop:Generator_ColumnVarNameInTable="columnShippingLine" msprop:Generator_ColumnPropNameInRow="ShippingLine" msprop:Generator_ColumnPropNameInTable="ShippingLineColumn" msprop:Generator_UserColumnName="ShippingLine" type="xs:string" minOccurs="0" />
+              <xs:element name="Volume" msprop:Generator_ColumnVarNameInTable="columnVolume" msprop:Generator_ColumnPropNameInRow="Volume" msprop:Generator_ColumnPropNameInTable="VolumeColumn" msprop:Generator_UserColumnName="Volume" type="xs:double" minOccurs="0" />
+              <xs:element name="Revenue" msprop:Generator_ColumnVarNameInTable="columnRevenue" msprop:Generator_ColumnPropNameInRow="Revenue" msprop:Generator_ColumnPropNameInTable="RevenueColumn" msprop:Generator_UserColumnName="Revenue" type="xs:double" minOccurs="0" />
+              <xs:element name="Yield" msprop:Generator_ColumnVarNameInTable="columnYield" msprop:Generator_ColumnPropNameInRow="Yield" msprop:Generator_ColumnPropNameInTable="YieldColumn" msprop:Generator_UserColumnName="Yield" type="xs:double" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
