@@ -11,7 +11,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
-
+using System.ComponentModel;
 namespace Commercial_Report
 {
     /// <summary>
@@ -26,7 +26,25 @@ namespace Commercial_Report
 
         private void OnComboBoxSelectionChanged(object sender, SelectionChangedEventArgs e)
         {
-            dataGridArea.Content = new DataTablePage();
+            if(!DesignerProperties.GetIsInDesignMode(this))
+            {
+                switch(((ComboBoxItem)e.AddedItems[0]).Content.ToString())
+                {
+                    case "Shipping Line":
+                        dataGridArea.Content = new YieldperTEUShipper();
+                        break;
+                    case "Import Consignee":
+                        dataGridArea.Content = new YieldperTEUImport();
+                        break;
+                    case "Export Consignee":
+                        dataGridArea.Content = new YieldperTEUExport();
+                        break;
+                }
+
+                
+            }
+            
+                                    
         }
     }
 }

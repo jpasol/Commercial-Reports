@@ -27,12 +27,9 @@ C:\Users\JPasol\Desktop\Repository\OP Dox Reports\Commercial Reports\Commercial 
 C:\Users\JPasol\Desktop\Repository\OP Dox Reports\Commercial Reports\Commercial Report\obj\Debug\Commercial Report.csproj.CopyComplete
 C:\Users\JPasol\Desktop\Repository\OP Dox Reports\Commercial Reports\Commercial Report\obj\Debug\Commercial Report.exe
 C:\Users\JPasol\Desktop\Repository\OP Dox Reports\Commercial Reports\Commercial Report\obj\Debug\Commercial Report.pdb
-C:\Users\JPasol\Desktop\Repository\OP Dox Reports\Commercial Reports\Commercial Report\obj\Debug\View\DataTablePage.g.cs
 C:\Users\JPasol\Desktop\Repository\OP Dox Reports\Commercial Reports\Commercial Report\obj\Debug\GeneratedInternalTypeHelper.g.cs
 C:\Users\JPasol\Desktop\Repository\OP Dox Reports\Commercial Reports\Commercial Report\obj\Debug\Commercial Report_MarkupCompile.lref
-C:\Users\JPasol\Desktop\Repository\OP Dox Reports\Commercial Reports\Commercial Report\obj\Debug\View\DataTablePage.baml
 C:\Users\JPasol\Desktop\Repository\OP Dox Reports\Commercial Reports\Commercial Report\bin\Debug\Throughput Volume Update.dll
-C:\Users\JPasol\Desktop\Repository\OP Dox Reports\Commercial Reports\Commercial Report\bin\Debug\ADODB.dll
 C:\Users\JPasol\Desktop\Repository\OP Dox Reports\Commercial Reports\Commercial Report\bin\Debug\ReportsInterface.dll
 C:\Users\JPasol\Desktop\Repository\OP Dox Reports\Commercial Reports\Commercial Report\bin\Debug\CrystalDecisions.CrystalReports.Engine.dll
 C:\Users\JPasol\Desktop\Repository\OP Dox Reports\Commercial Reports\Commercial Report\bin\Debug\CrystalDecisions.Shared.dll
@@ -54,7 +51,6 @@ C:\Users\JPasol\Desktop\Repository\OP Dox Reports\Commercial Reports\Commercial 
 C:\Users\JPasol\Desktop\Repository\OP Dox Reports\Commercial Reports\Commercial Report\bin\Debug\FlashControlV71.dll
 C:\Users\JPasol\Desktop\Repository\OP Dox Reports\Commercial Reports\Commercial Report\bin\Debug\CrystalDecisions.ReportAppServer.CommonControls.dll
 C:\Users\JPasol\Desktop\Repository\OP Dox Reports\Commercial Reports\Commercial Report\bin\Debug\stdole.dll
-C:\Users\JPasol\Desktop\Repository\OP Dox Reports\Commercial Reports\Commercial Report\bin\Debug\Crane Logs Report Creator Controls.dll
 C:\Users\JPasol\Desktop\Repository\OP Dox Reports\Commercial Reports\Commercial Report\bin\Debug\ShockwaveFlashObjects.dll
 C:\Users\JPasol\Desktop\Repository\OP Dox Reports\Commercial Reports\Commercial Report\bin\Debug\Throughput Volume Update.pdb
 C:\Users\JPasol\Desktop\Repository\OP Dox Reports\Commercial Reports\Commercial Report\bin\Debug\Throughput Volume Update.xml
@@ -65,4 +61,29 @@ C:\Users\JPasol\Desktop\Repository\OP Dox Reports\Commercial Reports\Commercial 
 C:\Users\JPasol\Desktop\Repository\OP Dox Reports\Commercial Reports\Commercial Report\bin\Debug\Crane Logs Report Creator.pdb
 C:\Users\JPasol\Desktop\Repository\OP Dox Reports\Commercial Reports\Commercial Report\bin\Debug\Crane Logs Report Creator.xml
 C:\Users\JPasol\Desktop\Repository\OP Dox Reports\Commercial Reports\Commercial Report\bin\Debug\Crane Logs Report Creator.dll.config
+C:\Users\JPasol\Desktop\Repository\OP Dox Reports\Commercial Reports\Commercial Report\bin\Debug\app.config
+C:\Users\JPasol\Desktop\Repository\OP Dox Reports\Commercial Reports\Commercial Report\bin\Debug\Chargeable Rates Updater.exe
+C:\Users\JPasol\Desktop\Repository\OP Dox Reports\Commercial Reports\Commercial Report\bin\Debug\CommonServiceLocator.dll
+C:\Users\JPasol\Desktop\Repository\OP Dox Reports\Commercial Reports\Commercial Report\bin\Debug\GalaSoft.MvvmLight.dll
+C:\Users\JPasol\Desktop\Repository\OP Dox Reports\Commercial Reports\Commercial Report\bin\Debug\GalaSoft.MvvmLight.Extras.dll
+C:\Users\JPasol\Desktop\Repository\OP Dox Reports\Commercial Reports\Commercial Report\bin\Debug\GalaSoft.MvvmLight.Platform.dll
+C:\Users\JPasol\Desktop\Repository\OP Dox Reports\Commercial Reports\Commercial Report\bin\Debug\System.Windows.Interactivity.dll
+C:\Users\JPasol\Desktop\Repository\OP Dox Reports\Commercial Reports\Commercial Report\bin\Debug\Chargeable Rates Updater.pdb
+C:\Users\JPasol\Desktop\Repository\OP Dox Reports\Commercial Reports\Commercial Report\bin\Debug\Chargeable Rates Updater.exe.config
+C:\Users\JPasol\Desktop\Repository\OP Dox Reports\Commercial Reports\Commercial Report\bin\Debug\GalaSoft.MvvmLight.pdb
+C:\Users\JPasol\Desktop\Repository\OP Dox Reports\Commercial Reports\Commercial Report\bin\Debug\GalaSoft.MvvmLight.xml
+C:\Users\JPasol\Desktop\Repository\OP Dox Reports\Commercial Reports\Commercial Report\bin\Debug\GalaSoft.MvvmLight.Extras.pdb
+C:\Users\JPasol\Desktop\Repository\OP Dox Reports\Commercial Reports\Commercial Report\bin\Debug\GalaSoft.MvvmLight.Extras.xml
+C:\Users\JPasol\Desktop\Repository\OP Dox Reports\Commercial Reports\Commercial Report\bin\Debug\GalaSoft.MvvmLight.Platform.pdb
+C:\Users\JPasol\Desktop\Repository\OP Dox Reports\Commercial Reports\Commercial Report\bin\Debug\GalaSoft.MvvmLight.Platform.xml
+C:\Users\JPasol\Desktop\Repository\OP Dox Reports\Commercial Reports\Commercial Report\bin\Debug\Syncfusion.Tools.WPF.dll
+C:\Users\JPasol\Desktop\Repository\OP Dox Reports\Commercial Reports\Commercial Report\bin\Debug\Syncfusion.Tools.WPF.xml
+C:\Users\JPasol\Desktop\Repository\OP Dox Reports\Commercial Reports\Commercial Report\obj\Debug\App.baml
+C:\Users\JPasol\Desktop\Repository\OP Dox Reports\Commercial Reports\Commercial Report\bin\Debug\Crane Logs Report Creator Controls.dll
 C:\Users\JPasol\Desktop\Repository\OP Dox Reports\Commercial Reports\Commercial Report\bin\Debug\Crane Logs Report Creator Controls.pdb
+C:\Users\JPasol\Desktop\Repository\OP Dox Reports\Commercial Reports\Commercial Report\obj\Debug\View\YieldperTEU - Export.g.cs
+C:\Users\JPasol\Desktop\Repository\OP Dox Reports\Commercial Reports\Commercial Report\obj\Debug\View\YieldperTEU - Import.g.cs
+C:\Users\JPasol\Desktop\Repository\OP Dox Reports\Commercial Reports\Commercial Report\obj\Debug\View\YieldperTEU - Shipper.g.cs
+C:\Users\JPasol\Desktop\Repository\OP Dox Reports\Commercial Reports\Commercial Report\obj\Debug\View\YieldperTEU - Export.baml
+C:\Users\JPasol\Desktop\Repository\OP Dox Reports\Commercial Reports\Commercial Report\obj\Debug\View\YieldperTEU - Import.baml
+C:\Users\JPasol\Desktop\Repository\OP Dox Reports\Commercial Reports\Commercial Report\obj\Debug\View\YieldperTEU - Shipper.baml

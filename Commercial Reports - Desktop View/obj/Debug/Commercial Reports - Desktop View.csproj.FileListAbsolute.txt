@@ -1,0 +1,6 @@
+C:\Users\JPasol\Desktop\Repository\OP Dox Reports\Commercial Reports\Commercial Reports - Desktop View\obj\Debug\Commercial Reports - Desktop View.csprojAssemblyReference.cache
+C:\Users\JPasol\Desktop\Repository\OP Dox Reports\Commercial Reports\Commercial Reports - Desktop View\obj\Debug\View\YieldperTEU.g.cs
+C:\Users\JPasol\Desktop\Repository\OP Dox Reports\Commercial Reports\Commercial Reports - Desktop View\obj\Debug\App.g.cs
+C:\Users\JPasol\Desktop\Repository\OP Dox Reports\Commercial Reports\Commercial Reports - Desktop View\obj\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Users\JPasol\Desktop\Repository\OP Dox Reports\Commercial Reports\Commercial Reports - Desktop View\obj\Debug\Commercial Reports - Desktop View_MarkupCompile.cache
+C:\Users\JPasol\Desktop\Repository\OP Dox Reports\Commercial Reports\Commercial Reports - Desktop View\obj\Debug\Commercial Reports - Desktop View_MarkupCompile.lref

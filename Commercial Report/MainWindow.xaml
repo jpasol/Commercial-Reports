@@ -3,14 +3,23 @@
                             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
                             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
                             xmlns:syncfusion="http://schemas.syncfusion.com/wpf"
-                            Title="MainWindow" Height="450" Width="800">
-    <Grid>
-        <syncfusion:LayoutControl LayoutMode="Metro">
+                            Title="MainWindow" Height="720" Width="1080"
+>
+    <Grid HorizontalAlignment="Stretch" VerticalAlignment="Stretch">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="1*" />
+            <ColumnDefinition Width="1*" />
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+        <syncfusion:LayoutControl HeaderText="Yield per TEU" HeaderDescriptionText="Shows the Yield per TEU from each kind of Revenue" LayoutMode="Metro" Grid.Column="1" Grid.Row="0">
             <syncfusion:LayoutControl.GridView>
-                <Frame x:Name="dataGridArea" NavigationUIVisibility="Hidden" />
+                <Frame x:Name="dataGridArea" NavigationUIVisibility="Hidden"/>
             </syncfusion:LayoutControl.GridView>
             <syncfusion:LayoutControl.UserOptionsView>
-                <syncfusion:UserOptions>
+                <syncfusion:UserOptions HeaderText="Revenue Kind" >
                     <StackPanel>
                         <TextBlock HorizontalAlignment="Left"
                                VerticalAlignment="Center"
@@ -25,15 +34,15 @@
                                   SelectedIndex="0"
                                   SelectionChanged="OnComboBoxSelectionChanged">
 
-                            <ComboBoxItem Content="Binding List" />
-                            <ComboBoxItem Content="Observable Collection" />
-                            <ComboBoxItem Content="Dynamic Objects" />
-                            <ComboBoxItem Content="Data Table" />
+                            <ComboBoxItem Content="Shipping Line" />
+                            <ComboBoxItem Content="Import Consignee" />
+                            <ComboBoxItem Content="Export Consignee" />
 
                         </ComboBox>
                     </StackPanel>
                 </syncfusion:UserOptions>
-        </syncfusion:LayoutControl.UserOptionsView>
+            </syncfusion:LayoutControl.UserOptionsView>
         </syncfusion:LayoutControl>
     </Grid>
+        
 </syncfusion:ChromelessWindow>

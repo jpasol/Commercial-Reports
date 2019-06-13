@@ -37,6 +37,21 @@
     <Prefer32Bit>false</Prefer32Bit>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="adodb, Version=7.0.3300.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="CommonServiceLocator, Version=2.0.4.0, Culture=neutral, PublicKeyToken=489b6accfaf20ef0, processorArchitecture=MSIL">
+      <HintPath>..\packages\CommonServiceLocator.2.0.4\lib\net46\CommonServiceLocator.dll</HintPath>
+    </Reference>
+    <Reference Include="GalaSoft.MvvmLight, Version=5.4.1.0, Culture=neutral, PublicKeyToken=e7570ab207bcb616, processorArchitecture=MSIL">
+      <HintPath>..\packages\MvvmLightLibs.5.4.1.1\lib\net45\GalaSoft.MvvmLight.dll</HintPath>
+    </Reference>
+    <Reference Include="GalaSoft.MvvmLight.Extras, Version=5.4.1.0, Culture=neutral, PublicKeyToken=669f0b5e8f868abf, processorArchitecture=MSIL">
+      <HintPath>..\packages\MvvmLightLibs.5.4.1.1\lib\net45\GalaSoft.MvvmLight.Extras.dll</HintPath>
+    </Reference>
+    <Reference Include="GalaSoft.MvvmLight.Platform, Version=5.4.1.0, Culture=neutral, PublicKeyToken=5f873c45e98af8a1, processorArchitecture=MSIL">
+      <HintPath>..\packages\MvvmLightLibs.5.4.1.1\lib\net45\GalaSoft.MvvmLight.Platform.dll</HintPath>
+    </Reference>
     <Reference Include="Syncfusion.Data.WPF, Version=17.1400.0.38, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\..\..\..\..\..\..\Program Files (x86)\Syncfusion\Essential Studio\WPF\17.1.0.38\Assemblies\4.6\Syncfusion.Data.WPF.dll</HintPath>
@@ -65,8 +80,14 @@
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\..\..\..\..\..\..\Program Files (x86)\Syncfusion\Essential Studio\WPF\17.1.0.38\Assemblies\4.6\Syncfusion.Shared.WPF.dll</HintPath>
     </Reference>
+    <Reference Include="Syncfusion.Tools.WPF, Version=17.1400.0.38, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89, processorArchitecture=MSIL" />
     <Reference Include="System" />
     <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Windows.Interactivity, Version=4.5.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\MvvmLightLibs.5.4.1.1\lib\net45\System.Windows.Interactivity.dll</HintPath>
+    </Reference>
     <Reference Include="System.Xml" />
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System.Core" />
@@ -75,12 +96,12 @@
     <Reference Include="System.Xaml">
       <RequiredTargetFramework>4.0</RequiredTargetFramework>
     </Reference>
-    <Reference Include="Throughput Volume Update">
-      <HintPath>..\..\Throughput-Volume-Update\bin\Debug\Throughput Volume Update.dll</HintPath>
-    </Reference>
+    <Reference Include="UIAutomationProvider" />
+    <Reference Include="UIAutomationTypes" />
     <Reference Include="WindowsBase" />
     <Reference Include="PresentationCore" />
     <Reference Include="PresentationFramework" />
+    <Reference Include="WindowsFormsIntegration" />
   </ItemGroup>
   <ItemGroup>
     <ApplicationDefinition Include="App.xaml">
@@ -89,17 +110,16 @@
     </ApplicationDefinition>
     <Compile Include="Helper\NotificationObject.cs" />
     <Compile Include="Model\CarrierRevenue.cs" />
-    <Compile Include="Model\RevenueDataModel.cs">
-      <DependentUpon>RevenueDataModel.xsd</DependentUpon>
+    <Compile Include="ViewModel\ViewModelLocator.cs" />
+    <Compile Include="ViewModel\YieldperTEUViewModel.cs" />
+    <Compile Include="View\YieldperTEU - Export.xaml.cs">
+      <DependentUpon>YieldperTEU - Export.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Model\RevenueDataModel.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>RevenueDataModel.xsd</DependentUpon>
+    <Compile Include="View\YieldperTEU - Import.xaml.cs">
+      <DependentUpon>YieldperTEU - Import.xaml</DependentUpon>
     </Compile>
-    <Compile Include="ViewModel\DatatableViewModel.cs" />
-    <Compile Include="View\DataTablePage.xaml.cs">
-      <DependentUpon>DataTablePage.xaml</DependentUpon>
+    <Compile Include="View\YieldperTEU - Shipper.xaml.cs">
+      <DependentUpon>YieldperTEU - Shipper.xaml</DependentUpon>
     </Compile>
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
@@ -113,7 +133,15 @@
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Page Include="View\DataTablePage.xaml">
+    <Page Include="View\YieldperTEU - Export.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="View\YieldperTEU - Import.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="View\YieldperTEU - Shipper.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
@@ -137,22 +165,29 @@
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
     <None Include="app.config" />
-    <None Include="Model\RevenueDataModel.xsc">
-      <DependentUpon>RevenueDataModel.xsd</DependentUpon>
-    </None>
-    <None Include="Model\RevenueDataModel.xsd">
-      <SubType>Designer</SubType>
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>RevenueDataModel.Designer.cs</LastGenOutput>
-    </None>
-    <None Include="Model\RevenueDataModel.xss">
-      <DependentUpon>RevenueDataModel.xsd</DependentUpon>
-    </None>
+    <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
     </None>
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <ProjectReference Include="..\..\Chargeable Rates Updater\Chargeable Rates Updater.csproj">
+      <Project>{8ef56bd4-3458-453b-b9cc-2683773b9d2d}</Project>
+      <Name>Chargeable Rates Updater</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Crane Logs Report Creator\Crane Logs Report Creator\Crane Logs Report Creator.vbproj">
+      <Project>{422c491a-19de-47cc-8f27-cb945c1b5733}</Project>
+      <Name>Crane Logs Report Creator</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\ITS – Operations Automation of Reports\Project1\Reports Interface.vbproj">
+      <Project>{19315380-b270-43b7-83b7-ac163b6f79cd}</Project>
+      <Name>Reports Interface</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Throughput-Volume-Update\Throughput Volume Update.vbproj">
+      <Project>{d3669981-7212-4ff2-9e98-b93d2de8bcf4}</Project>
+      <Name>Throughput Volume Update</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
